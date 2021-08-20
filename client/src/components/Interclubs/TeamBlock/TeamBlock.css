@@ -1,0 +1,59 @@
+.team-block {
+    position: relative;
+    width: 70%;
+    left: 15%;
+    height: 40vh;
+    margin-bottom: 15vh;
+    padding: 2vh 4vw;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.team-title {
+    position: absolute;
+    top: 40%;
+    width: 20%;
+    height: 40%;
+}
+.team-image-container {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.team-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 1s;
+}
+.team-image:hover {
+    top: -20%;
+    width: 150%;
+    height: 150%;
+}
+.team-body {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    width: 30%;
+    height: 55%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: justify;
+    line-height: 3.3vh;
+}
+.team-body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}

@@ -1,0 +1,74 @@
+.header-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+    z-index: 5;
+}
+.header-logo-box {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo {
+    height: 80%;
+    cursor: pointer;
+}
+.nav {
+    display: inline-flex;
+    position: absolute;
+    top: 1.75vh;
+    right: 5%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 2vw;
+    border-radius: 400px;
+}
+.nav-item {
+    color: #83818c;
+    padding: 2vh 1vw 2vh 1vw;
+    margin: 0 1vw 0 1vw;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.15em;
+    cursor: pointer;
+    position: relative;
+}
+.nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    width: 100%;
+    height: 0.8vh;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.nav-item:not(.is-active):hover::before {
+    opacity: 1;
+    bottom: 0;
+}
+.nav-item:not(.is-active):hover {
+    color: #333;
+}
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.4s;
+    height: 0.8vh;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}

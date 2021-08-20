@@ -1,0 +1,15 @@
+.nouvelles-container {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.nouvelles-block-container {
+    width: 100%;
+}

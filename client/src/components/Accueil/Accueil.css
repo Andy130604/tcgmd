@@ -1,0 +1,155 @@
+.img-court {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+}
+.welcome-message {
+    color: white;
+    font-size: 2.2em;
+    position: absolute;
+    left: 12vw;
+    top: 20vh;
+    font-weight: bolder;
+    letter-spacing: 0.08vw;
+}
+.btn-join {
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    left: 12vw;
+    top: 60vh;
+    width: 14vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.2s;
+}
+.btn-join::after {
+    content: "";
+    position: absolute;
+    right: 2vw;
+    width: 0;
+    height: 0;
+    border-top: 1.8vh solid transparent;
+    border-bottom: 1.8vh solid transparent;
+    border-left: 1.8vh solid white;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.btn-join:hover {
+    width: 17vw;
+}
+.btn-join:hover::after {
+    opacity: 1;
+}
+.club-presentation {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 100vh;
+    left: 0vw;
+    padding: 3vh 6vw;
+}
+.presentation-header,
+.dispo-header,
+.adhesion-header,
+.comite-header {
+    font-size: xx-large;
+    padding-bottom: 3vh;
+}
+.presentation-body {
+    font-size: large;
+}
+.disponibilite-courts {
+    width: 100vw;
+    height: 120vh;
+    position: absolute;
+    left: 0;
+    top: 150vh;
+    background-color: orange;
+    padding: 3vh 6vw;
+    box-sizing: border-box;
+}
+.court-preview {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+}
+.court-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 90vh;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.adhesion-container {
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    left: 0;
+    top: 270vh;
+    box-sizing: border-box;
+    padding: 3vh 6vw;
+}
+.btn-fiche-inscription {
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    left: 70vw;
+    top: 30vh;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.2s;
+}
+.btn-fiche-inscription::after {
+    content: "";
+    position: absolute;
+    right: 2vw;
+    width: 0;
+    height: 0;
+    border-top: 1.8vh solid transparent;
+    border-bottom: 1.8vh solid transparent;
+    border-left: 1.8vh solid white;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.btn-fiche-inscription:hover {
+    width: 18vw;
+}
+.btn-fiche-inscription:hover::after {
+    opacity: 1;
+}
+.comite-container {
+    position: absolute;
+    width: 100vw;
+    height: 150vh;
+    left: 0;
+    top: 330vh;
+    box-sizing: border-box;
+    padding: 3vh 6vw;
+}
+.comite-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+    position: absolute;
+}

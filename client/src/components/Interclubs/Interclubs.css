@@ -1,0 +1,15 @@
+.interclubs-container {
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: fit-content;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.team-block-container {
+    position: absolute;
+    width: 100%;
+}

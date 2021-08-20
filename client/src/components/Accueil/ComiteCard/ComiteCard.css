@@ -1,0 +1,92 @@
+.profile-card {
+    box-shadow: 0px 0px 18px #ccc;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2vh 3vw;
+    border-radius: 15px;
+}
+.profile-card:hover .profile-card-header::after,
+.profile-card.active .profile-card-header::after {
+    background-color: #1b95e0;
+    transition: all 0.6s ease;
+}
+.profile-card:hover .profile-card-header img,
+.profile-card.active .profile-card-header img {
+    border: 5px solid #1b95e0;
+}
+.profile-card:hover .profile-card-footer,
+.profile-card.active .profile-card-footer {
+    background-color: #1b95e0;
+    visibility: visible;
+    transition: all 0.6s ease;
+}
+.profile-card-header {
+    height: 150px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.profile-card-header::after {
+    position: absolute;
+    content: "";
+    border-radius: 35px 35px 100% 100%;
+    width: 300px;
+    height: 120px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.profile-card-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid #fff;
+    padding: 2px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+.profile-card-body {
+    height: 110px;
+}
+.profile-card-body h3 {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.profile-card-body p {
+    color: #444;
+    text-transform: capitalize;
+}
+.profile-card-footer {
+    height: 70px;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+.email-icon-container {
+    background-color: white;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15vw;
+    transition: width 0.4s;
+}
+.email-icon-container:hover {
+    width: 80%;
+}
+.email-icon {
+    height: 60%;
+}

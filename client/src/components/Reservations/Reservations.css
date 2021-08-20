@@ -1,0 +1,45 @@
+.reservations-container {
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 180vh;
+}
+.reservation-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+    position: absolute;
+    left: 0;
+    top: 1vh;
+}
+.hours-container {
+    display: flex;
+    flex-direction: column;
+    width: 7vw;
+    height: 112vh;
+    position: absolute;
+    left: 0vw;
+    top: 23vh;
+}
+.hour-display {
+    width: 100%;
+    height: calc(100% / 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.week-days-container {
+    position: absolute;
+    left: 7vw;
+    top: 10vh;
+    width: 91vw;
+    height: 120vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
