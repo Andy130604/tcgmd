@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReservationServices from "../../services/reservationsServices";
 import "./Reservations.css";
 import WeekDay from "./WeekDayColumn/WeekDayColumn";
 
 const Reservations = () => {
+    useEffect(() => {
+        retrieveReservations();
+    }, []);
+
+    const retrieveReservations = () => {
+        ReservationServices.getAllReservations()
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
+
     return (
         <div className="reservations-container">
             <div className="reservation-header">

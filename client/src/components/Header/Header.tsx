@@ -4,19 +4,19 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    const handleIndicator = (element: Element) => {
+    const handleIndicator = (element: HTMLElement) => {
         const items = document.querySelectorAll(".nav-item");
-        const indicator = document.querySelector(".nav-indicator");
+        const indicator = document.querySelector(".nav-indicator") as HTMLElement;
         items.forEach((item) => {
             item.classList.remove("is-active");
             item.removeAttribute("style");
         });
         if (indicator) {
-            indicator.style.width = "".concat(element.offsetWidth, "px");
-            indicator.style.left = "".concat(element.offsetLeft, "px");
-            indicator.style.backgroundColor = element.getAttribute("active-color");
+            indicator.style.width = "".concat(String(element.offsetWidth), "px");
+            indicator.style.left = "".concat(String(element.offsetLeft), "px");
+            indicator.style.backgroundColor = element.getAttribute("active-color") as string;
             element.classList.add("is-active");
-            element.style.color = element.getAttribute("active-color");
+            element.style.color = element.getAttribute("active-color") as string;
         }
     };
 
@@ -31,7 +31,7 @@ const Header = () => {
             });
             if (currentLocation === locations[index]) {
                 item.classList.add("is-active");
-                handleIndicator(item);
+                handleIndicator(item as HTMLElement);
             }
         });
     }, []);
@@ -42,7 +42,9 @@ const Header = () => {
                 title="TC Granges-Marnand"
                 to="/"
                 style={{ textDecoration: "none" }}
-                onClick={(e) => handleIndicator(document.querySelectorAll(".nav-item")[0])}
+                onClick={(e) =>
+                    handleIndicator(document.querySelectorAll(".nav-item")[0] as HTMLElement)
+                }
             >
                 <img src={logo} alt="logo" className="header-logo" />
             </Link>
